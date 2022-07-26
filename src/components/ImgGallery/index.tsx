@@ -36,10 +36,10 @@ const ImgGallery = () => {
   useLayoutEffect(() => {
     if (sideRef.current) {
       let boxWidth = 0;    
-      // [...sideRef.current.children].forEach(c => {
-      //   const childBox = c.getBoundingClientRect();
-      //   boxWidth = boxWidth + childBox.width;
-      // });
+      [...sideRef.current.children].forEach(c => {
+        const childBox = c.getBoundingClientRect();
+        boxWidth = boxWidth + childBox.width;
+      });
 
       const w =
         window.innerWidth ||
