@@ -260,10 +260,9 @@ h1:last-child {
 
     .imagescontent {
         display: block;
-
         .listItem {
+            margin-top: -100px;
             margin-bottom: 5vw;
-            height: 60vh;
             transition: all .3s;
             img {
                 background-attachment: scroll !important;
