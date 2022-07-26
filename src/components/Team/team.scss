@@ -1,0 +1,115 @@
+.next-project-sec {
+    position: static;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+
+    .link-block-2 {
+        position: relative;
+        left: 0%;
+        top: 0%;
+        right: 0%;
+        bottom: 0%;
+        z-index: 1;
+    }
+
+    .w-inline-block {
+        max-width: 100%;
+        display: inline-block;
+    }
+
+    a {
+        text-decoration: underline;
+        outline: 0;
+    }
+
+    a {
+        background-color: transparent;
+    }
+
+    .left-side-div {
+        display: flex;
+        width: 50vw;
+        height: 40vw;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    .right-side-div {
+        display: flex;
+        width: 50vw;
+        height: 40vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        vertical-align: middle;
+        display: inline-block;
+        position: relative;
+        width: 40vw;
+        height: 40vw;
+        max-height: 40vw;
+        max-width: none;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #000;
+        border-radius: 100vw;
+        -o-object-fit: cover;
+        object-fit: cover;
+        visibility: visible;
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        transform-style: preserve-3d;
+        transition: all .6s;
+
+        &:hover,
+        &:focus {
+            visibility: visible;
+            transform: translate3d(0px, 0px, 0px) scale3d(1.5, 1.5, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform-style: preserve-3d;
+        }
+    }
+
+    .scaleout {
+        visibility: visible;
+        transform: translate3d(0px, 0px, 0px) scale3d(1.5, 1.5, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        transform-style: preserve-3d;
+    }
+
+    .n-p-text {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        right: 0%;
+        bottom: 0%;
+        z-index: 20;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Radio grotesk', sans-serif;
+        color: #fff;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .next-project-sec {
+        height: 50vh;
+        margin-top: 200px;
+        .n-p-text {
+            font-size: 20px;
+        }
+    }
+}
