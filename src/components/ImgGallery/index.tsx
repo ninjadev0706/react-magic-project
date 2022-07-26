@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import { Controller, Scene } from "react-scrollmagic";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
-// import { useWindowSize } from "react-use";
 import { useTrail, animated } from "react-spring";
 import Sequence from './Sequence'
 
@@ -36,10 +35,6 @@ const ImgGallery = () => {
   useLayoutEffect(() => {
     if (sideRef.current) {
       let boxWidth = 0;    
-      // [...sideRef.current.children].forEach(c => {
-      //   const childBox = c.getBoundingClientRect();
-      //   boxWidth = boxWidth + childBox.width;
-      // });
 
       const w =
         window.innerWidth ||
