@@ -38,7 +38,7 @@ export const Team = () => {
             <div className="right-side-div">
                 <div data-w-id="b011a258-e070-0b72-d2de-29463a6359cd" className="next-proj">
                     <a href="" className="link-block-2 w-inline-block">
-                        <img loading="lazy" src="/assets/img/team02.jpg" alt="" className={isHoverNext ? 'image-6 scaleout' : 'image-6'} data-xblocker="passed" />
+                        <img loading="lazy" src="/assets/img/team02.JPG" alt="" className={isHoverNext ? 'image-6 scaleout' : 'image-6'} data-xblocker="passed" />
                         <div className="n-p-text"
                             onMouseOver={hoverNextMouse}
                             onMouseLeave={leaveNextMouse}
