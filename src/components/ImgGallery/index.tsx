@@ -1,9 +1,9 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useLayoutEffect } from "react";
 import ReactDOM from "react-dom";
 import { Controller, Scene } from "react-scrollmagic";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
-import { useWindowSize } from "react-use";
+// import { useWindowSize } from "react-use";
 import { useTrail, animated } from "react-spring";
 import Sequence from './Sequence'
 
@@ -13,8 +13,13 @@ const items = ["Will Adobe XD", "kill Sketch", "and InVision"];
 const config = { mass: 2, tension: 2000, friction: 200 };
 
 const ImgGallery = () => {
-  const size = useWindowSize();
-  const sideRef = useRef<any>(null);
+  // const size = useWindowSize();
+
+  const size = {
+    width: window.innerWidth,
+    height: window.innerHeight,
+  };
+  const sideRef = useRef(null);
   const controllerRef = useRef(null);
   const isMobile = useMediaQuery("(max-width: 768px)");
 
@@ -28,14 +33,13 @@ const ImgGallery = () => {
     from: { opacity: 0, x: 20, height: 0 }
   });
 
-  React.useLayoutEffect(() => {
+  useLayoutEffect(() => {
     if (sideRef.current) {
-      let boxWidth = 0;
-
-      [...sideRef.current.children].forEach(c => {
-        const childBox = c.getBoundingClientRect();
-        boxWidth = boxWidth + childBox.width;
-      });
+      let boxWidth = 0;    
+      // [...sideRef.current.children].forEach(c => {
+      //   const childBox = c.getBoundingClientRect();
+      //   boxWidth = boxWidth + childBox.width;
+      // });
 
       const w =
         window.innerWidth ||
