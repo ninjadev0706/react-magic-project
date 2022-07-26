@@ -7,7 +7,7 @@ const Sequence = () => {
     return (
         <div className="imagescontent">
             {galleryitems.map((item, i) => (
-                <div className="listItem"  data-aos="fade-up"  data-aos-delay="300" key={i}>
+                <div className="listItem" key={i}>
                     <img src={`${item.image}`} alt='' />
                 </div>
             ))}

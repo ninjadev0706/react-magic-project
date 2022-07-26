@@ -264,6 +264,7 @@ h1:last-child {
         .listItem {
             margin-bottom: 5vw;
             height: 60vh;
+            transition: all .3s;
             img {
                 background-attachment: scroll !important;
                 max-width: 100%;
@@ -275,4 +276,22 @@ h1:last-child {
     .imagewrapcontainer {
         width: 100%;
     }
+
+    .listItem {
+        img {
+            width: -webkit-fill-available;
+        }
+    }
+}
+
+.effect {
+    opacity: 0;
+    transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.aftereffect {
+    opacity: 1;
+    transform: translate3d(0px, 4px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
 }

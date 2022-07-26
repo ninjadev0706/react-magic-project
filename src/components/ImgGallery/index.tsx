@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import { Controller, Scene } from "react-scrollmagic";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
-// import { useWindowSize } from "react-use";
 import { useTrail, animated } from "react-spring";
 import Sequence from './Sequence'
 
@@ -13,7 +12,6 @@ const items = ["Will Adobe XD", "kill Sketch", "and InVision"];
 const config = { mass: 2, tension: 2000, friction: 200 };
 
 const ImgGallery = () => {
-  // const size = useWindowSize();
 
   const size = {
     width: window.innerWidth,
