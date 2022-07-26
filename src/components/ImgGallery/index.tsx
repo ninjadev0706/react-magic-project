@@ -19,7 +19,7 @@ const ImgGallery = () => {
     width: window.innerWidth,
     height: window.innerHeight,
   };
-  const sideRef = useRef(null);
+  const sideRef = useRef<any>(null);
   const controllerRef = useRef(null);
   const isMobile = useMediaQuery("(max-width: 768px)");
 
@@ -34,7 +34,8 @@ const ImgGallery = () => {
   });
 
   useLayoutEffect(() => {
-    if (sideRef.current) {
+    if (sideRef.current && sideRef.current.children) {
+      console.log(sideRef.current)
       let boxWidth = 0;    
       [...sideRef.current.children].forEach(c => {
         const childBox = c.getBoundingClientRect();
